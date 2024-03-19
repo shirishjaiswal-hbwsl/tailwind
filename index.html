@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./output.css">
+    <title>Homepage</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header id="navbar" class="flex flex-col bg-pallate-blue-850">
+        <section id="navbar__upper" class="w-full flex flex-row justify-between flex-wrap px-[0.875rem] py-[2rem] mobile:px-[1.25rem] mobile:py-[1.25rem] 
+        s:p-[2rem] s:m-0 md:p-[2rem] md:m-0">
+            <section class="flex justify-between mobile:items-center mobile:w-full s:w-full">
+                <img id="navbar__logo" src="./assets/Logo.png" alt="">
+                <img id="hamburger" src="./assets/hamburger.png" alt="" 
+                class="hidden mobile:flex mobile:w-[2rem] mobile:h-[2rem] s:flex s:w-[2rem] s:h-[2rem] 
+                m:flex m:w-[2rem] m:h-[2rem]">
+            </section>
+            
+            <section class="flex items-center justify-between mobile:hidden mobile:w-[5rem] s:mt-4 s:w-[90vw] m:mt-[1rem] m:w-[90vw]">
+                <input id="navbar__search" type="text" placeholder="Search by keyword or part number..."
+                class="flex w-[46.9375rem] border-transparent px-[0.875rem] py-[1.5rem] items-start mobile:w-[5rem] l:w-[14rem] el:w-[16rem] xxl:w-[35rem]">
+                <div class="inline-flex px-[0.72rem] py-[1.5rem] items-start gap-2 border-transparent bg-pallate-white">
+                    <img id="navbar__search__icon" src="./assets/magnifying-glass.svg" alt="" class="
+                    fill-white inline-flex items-start gap-2">
+            
+                </div>
+            </section>
+            
+            <section id="navbar__menu" class="flex items-center 
+            mobile:relative mobile:w-[100vw] mobile:h-[30vh] mobile:flex mobile:flex-col mobile:justify-center mobile:items-center mobile:hidden
+            s:relative s:w-[100vw] s:h-[40vh] s:flex s:flex-col s:justify-center s:items-center s:hidden
+            m:relative m:w-[100vw] m:h-[30vh] m:flex m:flex-col m:justify-center m:items-center m:hidden
+            l:items-center l:flex l:justify-between">
+                
+                <div class="flex ml-[3rem] items-center flex-col 
+                mobile:ml-0 mobile:w-full mobile:flex mobile:flex-row mobile:m-4 mobile:items-center mobile:justify-center
+                s:mx-[15px] s:my-0 m:mx-[10px] m:my-0 ">
+                    <img src="./assets/account.svg" alt="">
+                    <h4 class="text-pallate-white text-center text-[0.75rem] not-italic font-medium leading-2
+                    w-[4.75rem] h-[2rem] mt-1 mobile:ml-[10px]">Account Management</h4>
+                </div>
+                <div class="flex ml-[3rem] items-center flex-col 
+                mobile:ml-0 mobile:w-full mobile:flex mobile:flex-row mobile:m-4 mobile:items-center mobile:justify-center
+                s:mx-[15px] s:my-0 m:mx-[10px] m:my-0 ">
+                    <img src="./assets/paper_fill.svg" alt="">
+                    <h4 class="text-pallate-white text-center text-[0.75rem] not-italic font-medium leading-2
+                    w-[4.75rem] h-[2rem] mt-1 mobile:ml-[10px]">Request Quote</h4>
+                </div>
+                <div class="flex ml-[3rem] items-center flex-col 
+                mobile:ml-0 mobile:w-full mobile:flex mobile:flex-row mobile:m-4 mobile:items-center mobile:justify-center
+                s:mx-[15px] s:my-0 m:mx-[10px] m:my-0 ">
+                    <img src="./assets/notepad.svg" alt="">
+                    <h4 class="text-pallate-white text-center text-[0.75rem] not-italic font-medium leading-2
+                    w-[4.75rem] h-[2rem] mt-1 mobile:ml-[10px]">Quick Order Form</h4>
+                </div>
+                <div class="flex ml-[3rem] items-center flex-col 
+                mobile:ml-0 mobile:w-full mobile:flex mobile:flex-row mobile:m-4 mobile:items-center mobile:justify-center
+                s:mx-[15px] s:my-0 m:mx-[10px] m:my-0 ">
+                    <img src="./assets/cart.svg" alt="">
+                    <h4 class="text-pallate-white text-center text-[0.75rem] not-italic font-medium leading-2
+                    w-[4.75rem] h-[2rem] mt-1 mobile:ml-[10px]">Cart</h4>
+                </div>
+            </section>
+        </section>
+
+        <section id="navbar__lower" class="flex items-center justify-between px-[1.25rem] py-[1rem] h-[4rem] bg-pallate-blue-900
+        mobile:block mobile:p-[2rem] mobile:h-[5rem] mobile:h-fit
+        s:p-[2rem] s:h-fit s:block m:p-[2rem] m:h-fit m:block">
+            <div id="navbar__lower__one" class="flex mobile:w-full items-center mobile:justify-between sdde:justify-between m:justify-between">
+                <div id="a" class="flex items-center mr-[1rem]">
+                    <h3 id="navbar__lower__p" class="text-pallate-white text-base not-italic font-normal leading-[1.5rem] ml-[0.5rem] mobile:text-[0.7rem] s:text-[1rem] m:text-[1rem]">All Products</h3>
+                    <img src="./assets/material-symbols_keyboard-arrow-down.svg" alt="">
+                </div>
+                <div>
+                    <h3 id="navbar__lower__p" class="text-pallate-white text-base not-italic font-normal leading-[1.5rem] ml-[0.5rem] mobile:text-[0.7rem] s:text-[1rem] m:text-[1rem]">Request for Quote</h3>
+                </div>
+            </div>
+
+            <div id="navbar__lower__two" class="flex items-center mobile:mt-[0.5rem] mobile:w-full mobile:justify-between
+            s:justify-between m:justify-between">
+                <div id="navbar__list__contact" class="flex ml-[2rem] mobile:m-0 s:m-0 m:m-0">
+                    <img src="./assets/call.svg" alt="">
+                    <p id="navbar__lower__p" class="text-pallate-white text-base not-italic font-normal leading-[1.5rem] ml-[0.5rem] mobile:text-[0.7rem] s:text-[1rem] m:text-[1rem]">1-800-12345</p>
+                </div>
+
+                <div id="navbar__list__contact" class="flex ml-[2rem] mobile:m-0 s:m-0 m:m-0">
+                    <img src="./assets/material-symbols_mail.svg" alt="">
+                    <h3 id="navbar__lower__p" class="text-pallate-white text-base not-italic font-normal leading-[1.5rem] ml-[0.5rem] mobile:text-[0.7rem] s:text-[1rem] m:text-[1rem]">tools@humcommerce.com</h3>
+                </div>
+            </div>
+
+        </section>
+        
+    </header>
+    <main class="px-[3rem] py-[1rem]">
+        <section id="card__section" class="relative py-3.5 px-6rem flex justify-between 
+        mobile:p-8 mobile:block 
+        s:p-8 s:flex s:flex-col s:justify-center s:items-center 
+        m:grid m:px-8 m:py-3.5 m:grid-cols-[repeat(auto-fit,minmax(20rem,1fr))]
+        l:grid l:py-3.5 l:px-8 l:grid-cols-[repeat(auto-fit, minmax(25rem, 1fr))] 
+        xl:gird xl:grid-cols-[repeat(auto-fit, minmax(25rem, 1fr))]">
+            <div id="card__section__card" class="relative">
+                <img id="image" class="w-31rem h-15.5625rem 
+                                        mobile:w-85vw 
+                                        s:w-85vw 
+                                        m:w-20rem 
+                                        l:w-25rem 
+                                        xl:w-25rem" src="./assets/Group 13229.png" alt="">
+                <h3 id="heading" class="absolute text-pallate-white text-xl not-italic font-bold leading-7 pl-4 top-[8.25rem] font-Inter 
+                                        mobile:text-base 
+                                        m:text-lg">Bulk Order</h3>
+                <p id="text" class="absolute top-[10.25rem] text-pallate-white w-3/5 font-Inter text-sm not-italic font-normal pl-4 
+                                    mobile:text-[0.65rem] mobile:w-60vw 
+                                    m:text-[0.8rem] m:w-3/5"
+                >Speed up purchasing with Bulk Orders</p>
+                <div id="btn" class="flex absolute bottom-4 pl-4 text-pallate-white font-Inter text-xs not-italic font-semibold">
+                    <p>View</p>
+                    <img src="./assets/arrow-long-right.svg" alt="">
+                </div>
+            </div>
+        
+            <div id="card__section__card" class="relative">
+                <img id="image" class="w-31rem h-15.5625rem 
+                mobile:w-85vw 
+                s:w-85vw 
+                m:w-20rem 
+                l:w-25rem 
+                xl:w-25rem" src="./assets/Group 13229.png" alt="">
+                <h3 id="heading" class="absolute text-pallate-white text-xl not-italic font-bold leading-7 pl-4 top-[8.25rem] font-Inter 
+                mobile:text-base 
+                m:text-lg">Create Company Account</h3>
+                <p id="text" class="absolute top-[10.25rem] text-pallate-white w-3/5 font-Inter text-sm not-italic font-normal pl-4 
+                mobile:text-[0.65rem] mobile:w-60vw 
+                m:text-[0.8rem] m:w-3/5">Register and manage your company account. Enable Purchase Order</p>
+                <div id="btn" class="flex absolute bottom-4 pl-4 text-pallate-white font-Inter text-xs not-italic font-semibold">
+                    <p>View</p>
+                    <img src="./assets/arrow-long-right.svg" alt="">
+                </div>
+            </div>
+        
+            <div id="card__section__card" class="relative">
+                <img id="image" class="w-31rem h-15.5625rem 
+                mobile:w-85vw 
+                s:w-85vw 
+                m:w-20rem 
+                l:w-25rem 
+                xl:w-25rem" src="./assets/Group 13229.png" alt="">
+                <h3 id="heading" class="absolute text-pallate-white text-xl not-italic font-bold leading-7 pl-4 top-[8.25rem] font-Inter 
+                mobile:text-base 
+                m:text-lg">Make Your Purchase Lists</h3>
+                <p id="text" class="absolute top-[10.25rem] text-pallate-white w-3/5 font-Inter text-sm not-italic font-normal pl-4 
+                mobile:text-[0.65rem] mobile:w-60vw 
+                m:text-[0.8rem] m:w-3/5">Create multiple Purchase Lists to avoid searching for products</p>
+                <div id="btn" class="flex absolute bottom-4 pl-4 text-pallate-white font-Inter text-xs not-italic font-semibold">
+                    <p>View</p>
+                    <img src="./assets/arrow-long-right.svg" alt="">
+                </div>
+            </div>
+        </section>
+        <section id="main__section" class="py-[1.25rem] px-[6rem] mobile:p-8 s:py-[1.25rem] s:px-[3.5rem] m:py-3.5 m:px-8">
+            <section id="one" class="flex justify-between items-center ">
+                <h2 id="one__title" class="text-pallate-gray-800 font-inter text-lg font-semibold leading-7 mobile:text-[0.8rem]">Shop By Category</h2>
+                <div id="one__view__div" class="flex items-center ">
+                    <h3 id="one__view" class="text-pallate-blue-700 font-Inter not-italic font-bold scroll-mr-2 leading-5">View All Categories</h3>
+                    <img src="./assets/arrow-long-right.svg" alt="">
+                </div>
+            </section>
+            <section id="two" class="grid grid-cols-[repeat(auto-fit,minmax(13.75rem,1fr))] gap-6 m-6">
+
+                <div id="two__item" class="flex flex-col w-[13.75rem] pt-5 pr-6 pb-[2.125rem] pl-6 justify-center items-center border border-solid border-pallate-gray-300 bg-pallate-white">
+                    <img id="category" class="w-8.125rem h-8.125rem shrink-0" src="./assets/a.png" alt="">
+                    <h4 id="two__item__title" class="text-pallate-gray-800 text-center mt-4 font-Inter text-sm font-normal leading-5">Abrasives</h4>
+                </div>
+    
+                <div id="two__item" class="flex flex-col w-[13.75rem] pt-5 pr-6 pb-[2.125rem] pl-6 justify-center items-center border border-solid border-pallate-gray-300 bg-pallate-white">
+                    <img id="category" class="w-8.125rem h-8.125rem shrink-0" src="./assets/b.png" alt="">
+                    <h4 id="two__item__title" class="text-pallate-gray-800 text-center mt-4 font-Inter text-sm font-normal leading-5">Adhesives, Sealants & Fillers</h4>
+                </div>
+    
+                <div id="two__item" class="flex flex-col w-[13.75rem] pt-5 pr-6 pb-[2.125rem] pl-6 justify-center items-center border border-solid border-pallate-gray-300 bg-pallate-white">
+                    <img id="category" class="w-8.125rem h-8.125rem shrink-0" src="./assets/c.png" alt="">
+                    <h4 id="two__item__title" class="text-pallate-gray-800 text-center mt-4 font-Inter text-sm font-normal leading-5">Advanced Materials</h4>
+                </div>
+    
+                <div id="two__item" class="flex flex-col w-[13.75rem] pt-5 pr-6 pb-[2.125rem] pl-6 justify-center items-center border border-solid border-pallate-gray-300 bg-pallate-white">
+                    <img id="category" class="w-8.125rem h-8.125rem shrink-0" src="./assets/d.png" alt="">
+                    <h4 id="two__item__title" class="text-pallate-gray-800 text-center mt-4 font-Inter text-sm font-normal leading-5">Automotive Parts & Hardware</h4>
+                </div>
+    
+                <div cid="two__item" class="flex flex-col w-[13.75rem] pt-5 pr-6 pb-[2.125rem] pl-6 justify-center items-center border border-solid border-pallate-gray-300 bg-pallate-white">
+                    <img id="category" class="w-8.125rem h-8.125rem shrink-0" src="./assets/building_material.png" alt="">
+                    <h4 id="two__item__title" class="text-pallate-gray-800 text-center mt-4 font-Inter text-sm font-normal leading-5">Building Materials</h4>
+                </div>
+    
+                <div id="two__item" class="flex flex-col w-[13.75rem] pt-5 pr-6 pb-[2.125rem] pl-6 justify-center items-center border border-solid border-pallate-gray-300 bg-pallate-white">
+                    <img id="category" class="w-8.125rem h-8.125rem shrink-0" src="./assets/cleaning_material.png" alt="">
+                    <h4 id="two__item__title" class="text-pallate-gray-800 text-center mt-4 font-Inter text-sm font-normal leading-5">Cleaning Supplies</h4>
+                </div>
+    
+                <div id="two__item" class="flex flex-col w-[13.75rem] pt-5 pr-6 pb-[2.125rem] pl-6 justify-center items-center border border-solid border-pallate-gray-300 bg-pallate-white">
+                    <img id="category" class="w-8.125rem h-8.125rem shrink-0" src="./assets/coating.png" alt="">
+                    <h4 id="two__item__title" class="text-pallate-gray-800 text-center mt-4 font-Inter text-sm font-normal leading-5">Coating</h4>
+                </div>
+    
+                <div id="two__item" class="flex flex-col w-[13.75rem] pt-5 pr-6 pb-[2.125rem] pl-6 justify-center items-center border border-solid border-pallate-gray-300 bg-pallate-white">
+                    <img id="category" class="w-8.125rem h-8.125rem shrink-0" src="./assets/compounds.png" alt="">
+                    <h4 id="two__item__title" class="text-pallate-gray-800 text-center mt-4 font-Inter text-sm font-normal leading-5">Compounds and Polishes</h4>
+                </div>
+    
+                <div id="two__item" class="flex flex-col w-[13.75rem] pt-5 pr-6 pb-[2.125rem] pl-6 justify-center items-center border border-solid border-pallate-gray-300 bg-pallate-white">
+                    <img id="category" class="w-8.125rem h-8.125rem shrink-0" src="./assets/dental.png" alt="">
+                    <h4 id="two__item__title" class="text-pallate-gray-800 text-center mt-4 font-Inter text-sm font-normal leading-5">Dental & Orthodonics</h4>
+                </div>
+    
+    
+                <div id="two__item" class="flex flex-col w-[13.75rem] pt-5 pr-6 pb-[2.125rem] pl-6 justify-center items-center border border-solid border-pallate-gray-300 bg-pallate-white">
+                    <img id="category" class="w-8.125rem h-8.125rem shrink-0" src="./assets/electrical.png" alt="">
+                    <h4 id="two__item__title" class="text-pallate-gray-800 text-center mt-4 font-Inter text-sm font-normal leading-5">Electrical</h4>
+                </div>
+    
+                <div id="two__item" class="flex flex-col w-[13.75rem] pt-5 pr-6 pb-[2.125rem] pl-6 justify-center items-center border border-solid border-pallate-gray-300 bg-pallate-white">
+                    <img id="category" class="w-8.125rem h-8.125rem shrink-0" src="./assets/electronic.png" alt="">
+                    <h4 id="two__item__title" class="text-pallate-gray-800 text-center mt-4 font-Inter text-sm font-normal leading-5">Electronics Materials & Components</h4>
+                </div>
+    
+                <div id="two__item" class="flex flex-col w-[13.75rem] pt-5 pr-6 pb-[2.125rem] pl-6 justify-center items-center border border-solid border-pallate-gray-300 bg-pallate-white">
+                    <img id="category" class="w-8.125rem h-8.125rem shrink-0" src="./assets/films.png" alt="">
+                    <h4 id="two__item__title" class="text-pallate-gray-800 text-center mt-4 font-Inter text-sm font-normal leading-5">Films & Sheeting</h4>
+                </div>
+                <div id="two__item" class="flex flex-col w-[13.75rem] pt-5 pr-6 pb-[2.125rem] pl-6 justify-center items-center border border-solid border-pallate-gray-300 bg-pallate-white">
+                    <img id="category" class="w-8.125rem h-8.125rem shrink-0" src="./assets/medical.png" alt="">
+                    <h4 id="two__item__title" class="text-pallate-gray-800 text-center mt-4 font-Inter text-sm font-normal leading-5">Medical</h4>
+                </div>
+                <div id="two__item" class="flex flex-col w-[13.75rem] pt-5 pr-6 pb-[2.125rem] pl-6 justify-center items-center border border-solid border-pallate-gray-300 bg-pallate-white">
+                    <img id="category" class="w-8.125rem h-8.125rem shrink-0" src="./assets/office_supplies.png" alt="">
+                    <h4 id="two__item__title" class="text-pallate-gray-800 text-center mt-4 font-Inter text-sm font-normal leading-5">Office Supplies</h4>
+                </div>
+                <div id="two__item" class="flex flex-col w-[13.75rem] pt-5 pr-6 pb-[2.125rem] pl-6 justify-center items-center border border-solid border-pallate-gray-300 bg-pallate-white">
+                    <img id="category" class="w-8.125rem h-8.125rem shrink-0" src="./assets/PPE.png" alt="">
+                    <h4 id="two__item__title" class="text-pallate-gray-800 text-center mt-4 font-Inter text-sm font-normal leading-5">Personal Protective Equipment</h4>
+                </div>
+                <div id="two__item" class="flex flex-col w-[13.75rem] pt-5 pr-6 pb-[2.125rem] pl-6 justify-center items-center border border-solid border-pallate-gray-300 bg-pallate-white">
+                    <img id="category" class="w-8.125rem h-8.125rem shrink-0" src="./assets/signage.png" alt="">
+                    <h4 id="two__item__title" class="text-pallate-gray-800 text-center mt-4 font-Inter text-sm font-normal leading-5">Signage & Marking</h4>
+                </div>
+                <div id="two__item" class="flex flex-col w-[13.75rem] pt-5 pr-6 pb-[2.125rem] pl-6 justify-center items-center border border-solid border-pallate-gray-300 bg-pallate-white">
+                    <img id="category" class="w-8.125rem h-8.125rem shrink-0" src="./assets/tapes.png" alt="">
+                    <h4 id="two__item__title" class="text-pallate-gray-800 text-center mt-4 font-Inter text-sm font-normal leading-5">Tapes</h4>
+                </div>
+                <div id="two__item" class="flex flex-col w-[13.75rem] pt-5 pr-6 pb-[2.125rem] pl-6 justify-center items-center border border-solid border-pallate-gray-300 bg-pallate-white">
+                    <img id="category" class="w-8.125rem h-8.125rem shrink-0" src="./assets/tools.png" alt="">
+                    <h4 id="two__item__title" class="text-pallate-gray-800 text-center mt-4 font-Inter text-sm font-normal leading-5">Tools & Equipment</h4>
+                </div>
+                <div id="two__item" class="flex flex-col w-[13.75rem] pt-5 pr-6 pb-[2.125rem] pl-6 justify-center items-center border border-solid border-pallate-gray-300 bg-pallate-white">
+                    <img id="category" class="w-8.125rem h-8.125rem shrink-0" src="./assets/a.png" alt="">
+                    <h4 id="two__item__title" class="text-pallate-gray-800 text-center mt-4 font-Inter text-sm font-normal leading-5">Abrasives</h4>
+                </div>
+                <div id="two__item" class="flex flex-col w-[13.75rem] pt-5 pr-6 pb-[2.125rem] pl-6 justify-center items-center border border-solid border-pallate-gray-300 bg-pallate-white">
+                    <img id="category" class="w-8.125rem h-8.125rem shrink-0" src="./assets/b.png" alt="">
+                    <h4 id="two__item__title" class="text-pallate-gray-800 text-center mt-4 font-Inter text-sm font-normal leading-5">Adhesives, Sealants & Fillers</h4>
+                </div>
+                <div id="two__item" class="flex flex-col w-[13.75rem] pt-5 pr-6 pb-[2.125rem] pl-6 justify-center items-center border border-solid border-pallate-gray-300 bg-pallate-white">
+                    <img id="category" class="w-8.125rem h-8.125rem shrink-0" src="./assets/c.png" alt="">
+                    <h4 id="two__item__title" class="text-pallate-gray-800 text-center mt-4 font-Inter text-sm font-normal leading-5">Advanced Materials</h4>
+                </div>
+                <div id="two__item" class="flex flex-col w-[13.75rem] pt-5 pr-6 pb-[2.125rem] pl-6 justify-center items-center border border-solid border-pallate-gray-300 bg-pallate-white">
+                    <img id="category" class="w-8.125rem h-8.125rem shrink-0" src="./assets/d.png" alt="">
+                    <h4 id="two__item__title" class="text-pallate-gray-800 text-center mt-4 font-Inter text-sm font-normal leading-5">Automotive Parts & Hardware</h4>
+                </div>
+                <div id="two__item" class="flex flex-col w-[13.75rem] pt-5 pr-6 pb-[2.125rem] pl-6 justify-center items-center border border-solid border-pallate-gray-300 bg-pallate-white">
+                    <img id="category" class="w-8.125rem h-8.125rem shrink-0" src="./assets/building_material.png" alt="">
+                    <h4 id="two__item__title" class="text-pallate-gray-800 text-center mt-4 font-Inter text-sm font-normal leading-5">Building Materials</h4>
+                </div>
+                <div id="two__item" class="flex flex-col w-[13.75rem] pt-5 pr-6 pb-[2.125rem] pl-6 justify-center items-center border border-solid border-pallate-gray-300 bg-pallate-white">
+                    <img id="category" class="w-8.125rem h-8.125rem shrink-0" src="./assets/cleaning_material.png" alt="">
+                    <h4 id="two__item__title" class="text-pallate-gray-800 text-center mt-4 font-Inter text-sm font-normal leading-5">Cleaning Supplies</h4>
+                </div>
+                
+            </section>
+            
+        </section>
+    </main>
+    <footer id="footer" class="flex flex-wrap flex-col h-22.5rem flex-shrink-0 bg-pallate-gray-100 
+    mobile:block mobile:h-22.5rem mobile:realtive mobile:h-auto 
+    s:block s:h-auto m:block m:h-auto">
+        <div id="footer__upper" class="flex mt-4 justify-around mobile:p-8 flex-wrap block s:p-8 s:flex-wrap m:p-8 m:flex-wrap m:block m:grid m:grid-col-3">
+            <section id="footer__section" class="mobile:mt-4 mobile:m-8 mobile:p-0 
+            s:mt-4 s:m-4 m:mt-4 m:m-8 ">
+                <h2 id="footer__upper__title" class="text-pallate-gray-700 font-Inter font-sm not-italic font-semibold leading-5 ">Information</h2>
+                <ul id="footer__list" class="mt-0">
+                    <li id="footer__list__item" class="text-pallate-gray-600 font-Inter text-sm not-italic font-normal leading-5">About Us</li>
+                    <li id="footer__list__item" class="text-pallate-gray-600 font-Inter text-sm not-italic font-normal leading-5">Terms & Conditions</li>
+                    <li id="footer__list__item" class="text-pallate-gray-600 font-Inter text-sm not-italic font-normal leading-5">Privacy Policy</li>
+                    <li id="footer__list__item" class="text-pallate-gray-600 font-Inter text-sm not-italic font-normal leading-5">Join Us</li>
+                </ul>
+            </section>
+            <section id="footer__section" class="mobile:mt-4 mobile:m-8 mobile:p-0 
+            s:mt-4 s:m-4 m:mt-4 m:m-8 ">
+                <h2 id="footer__upper__title" class="text-pallate-gray-700 font-Inter font-sm not-italic font-semibold leading-5 ">Quick Links</h2>
+                <ul id="footer__list" class="mt-0">
+                    <li id="footer__list__item" class="text-pallate-gray-600 font-Inter text-sm not-italic font-normal leading-5">Meet the Team</li>
+                    <li id="footer__list__item" class="text-pallate-gray-600 font-Inter text-sm not-italic font-normal leading-5">Line Card</li>
+                    <li id="footer__list__item" class="text-pallate-gray-600 font-Inter text-sm not-italic font-normal leading-5">Contact Us</li>
+                    <li id="footer__list__item" class="text-pallate-gray-600 font-Inter text-sm not-italic font-normal leading-5">My Account</li>
+                </ul>
+            </section>
+            <section id="footer__section" class="mobile:mt-4 mobile:m-8 mobile:p-0 
+            s:mt-4 s:m-4 m:mt-4 m:m-8 ">
+                <h2 id="footer__upper__title" class="text-pallate-gray-700 font-Inter font-sm not-italic font-semibold leading-5 ">Customer service</h2>
+                <ul id="footer__list" class="mt-0">
+                    <li id="footer__list__item" class="text-pallate-gray-600 font-Inter text-sm not-italic font-normal leading-5">Invoicing & Credit</li>
+                    <li id="footer__list__item" class="text-pallate-gray-600 font-Inter text-sm not-italic font-normal leading-5">Return Policy</li>
+                    <li id="footer__list__item" class="text-pallate-gray-600 font-Inter text-sm not-italic font-normal leading-5">Conflict Material Policy</li>
+                    <li id="footer__list__item" class="text-pallate-gray-600 font-Inter text-sm not-italic font-normal leading-5">Contact Us</li>
+                </ul>
+            
+            </section>
+            <section id="footer__section" class="mobile:mt-4 mobile:m-8 mobile:p-0 
+            s:mt-4 s:m-4 m:mt-4 m:m-8 ">
+                <h2 id="footer__upper__title" class="text-pallate-gray-700 font-Inter font-sm not-italic font-semibold leading-5 ">Contact Us</h2>
+                <ul id="footer__list" class="mt-0">
+
+                    <p id="footer__list__item" class="text-pallate-gray-600 font-Inter text-sm not-italic font-normal leading-5">Questions? Call Us</p>
+                </ul>
+                <div id="footer__list__contact" class="flex ">
+                    <img src="./assets/material-symbols_call.svg" alt="">
+                    <p id="footer__list__number" class="text-pallate-gray-600 font-Inter font-sm not-italic font-semibold leading-5">1-800-12345</p>
+                </div>
+                <ul id="footer__socials" class="flex mt-4 gap-4">
+                    <li>
+                        <img src="./assets/uil_facebook.svg" alt="">
+                    </li>
+                    <li>
+                        <img src="./assets/mdi_twitter.svg" alt="">
+                    </li>
+                    <li>
+                        <img src="./assets/mdi_instagram.svg" alt="">
+                    </li>
+                </ul>
+            </section>
+            
+            <section id="footer__section" class="mobile:mt-4 mobile:m-8 mobile:p-0 
+            s:mt-4 s:m-4 m:mt-4 m:m-8 ">
+                <h2 id="footer__upper__title" class="text-pallate-gray-700 font-Inter font-sm not-italic font-semibold leading-5 ">Get Latest Updates!</h2>
+                <h3 id="footer__list_footer__list__item" class="mt-4 text-pallate-gray-600 font-Inter text-sm not-italic not-italic leading-5">Subscribe for latest offers</h3>
+                <form action="">
+                    <input id="footer__input" class="flex w-20.5625rem h-2.75rem p-0.75rem 11.1875rem 0.75rem 1rem items-center flex-shrink-0 border border-pallate-blue-300 bg-pallate-white 
+                    mobile:w-70vw mobile:p-8px
+                    m:w-50vw m:p-8px" placeholder="johndoe@gmail.com" type="email" name="" id="">
+                    <input id="footer__subscribe" class="border-none inline-flex py-3 px-5 justify-center items-center bg-pallate-blue-700 text-pallate-white mt-1.62rem font-Inter text-sm not-italic font-semibold leading-5" type="submit" value="Subscribe">
+                </form>
+            </section>
+        </div>
+        <hr>
+        <div id="footer__copyright" class="relative top-2 text-pallate-gray-500 text-center p-8 text-xs not-italic font-normal leading-4">
+            <p>Copyright@2023 HumCommerce Business. All Rights Reserved.</p>
+        </div>
+        
+    </footer>
+    
+    
+    
+</body>
+</html>

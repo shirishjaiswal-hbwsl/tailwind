@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --pallate-white : #FFF;
+    --pallate-blue-700 : #196195;
+    --pallate-gray-300 : #D4D4D8;
+    --pallate-gray-100 : #F4F4F5;
+    --pallate-gray-700 : #3F3F46;
+    --pallate-blue-300 : #7FC7FB;
+    --pallate-blue-700 : #196195;
+    --pallate-gray-500 : #71717A;
+    --pallate-blue-850 : #0C304B;
+    --pallate-grey-800 : #27272A;
+}
